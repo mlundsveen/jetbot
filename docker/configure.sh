@@ -7,7 +7,7 @@ L4T_RELEASE=$(echo $L4T_VERSION_STRING | cut -f 2 -d ' ' | grep -Po '(?<=R)[^;]+
 L4T_REVISION=$(echo $L4T_VERSION_STRING | cut -f 2 -d ',' | grep -Po '(?<=REVISION: )[^;]+')
 
 
-export L4T_VERSION="$L4T_RELEASE.$L4T_REVISION"
+export L4T_VERSION="32.5.0"
 
 if [[ $L4T_VERSION = "32.4.3" ]]
 then
